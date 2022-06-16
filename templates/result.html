@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</style> 
+<head>
+    <meta charset="UTF-8" />
+    <h1  align=center><font>Segmentation des images pour les véhicules autonomes</font></h1>
+    <h2 align=center> Demo API Flask</h2>
+    <br>
+    <hr  color="#ff3385" align=center>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+         <h3> Résulat de la prédiction de l'image : {{image_name}}.</h3>
+        </div>
+      
+    </header>
+    <main>
+         <table>
+           <tr>
+               <td>
+                   <h3 align=center>Image originale</h3>
+                   <img  src='{{ url_for("static", filename="test_data/images/"+image_name) }}'  height="256" width="512"/>
+                </td>
+                   <td>
+                    <h3 align=center>masque de cityspaces</h3>
+                    <img src='{{ url_for("static", filename="outputs/trueMask.png")}}'  height="256" width="512"/>
+                </td>
+                <td>
+                   <h3 align=center>masque prédit</h3>
+                   <img src='{{ url_for("static", filename="outputs/predictedMask.png") }}' height="256"width="512"/>
+                </td>
+            
+               
+               
+               
+            </tr>
+      
+          </table>   
+    </main>
+
+</body>

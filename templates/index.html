@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</style> 
+<head>
+    <meta charset="UTF-8" />
+    <h1  align=center><font>Segmentation des images pour les véhicules autonomes</font></h1>
+    <h2 align=center> Demo API Flask</h2>
+    <br>
+    <hr  color="#ff3385" align=center>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+         <h3> Notre API prend en entrée l’identifiant d’une image et retourne l’image avec les segments 
+             identifiés par le modèle et l’image avec les segments identifiés annotés dans le 
+             jeu de données cityscapes.</h3>
+        </div>
+    </header>
+    <main>
+       <div>
+        <div>
+            <form action="/result" method="post">
+                <text>Entrer l'identifiant de l'image : </text>
+                <input type="text" name="id_image"  placeholder='ville_XXXXXX_XXXXXX' />
+                <input type="submit" value="Lancer la prédiction" />
+             </form>
+        </div>
+         <br>
+         <p align="center"><img src="/static/logo_future_vision_transport.png" style="width:512px;height:256px;" /></p>
+    </main>
+
+</body>
