@@ -13,7 +13,6 @@ import matplotlib.pyplot as plt
 import segmentation_models as sm
 from PIL import Image
 from app import app
-from main import app
 import cv2
 
 
